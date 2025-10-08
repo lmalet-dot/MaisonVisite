@@ -1,7 +1,61 @@
 var APP_DATA = {
   "scenes": [
     {
-      "id": "0-alle",
+      "id": "0-jardin_centre",
+      "name": "jardin_centre",
+      "levels": [
+        {
+          "tileSize": 256,
+          "size": 256,
+          "fallbackOnly": true
+        },
+        {
+          "tileSize": 512,
+          "size": 512
+        },
+        {
+          "tileSize": 512,
+          "size": 1024
+        },
+        {
+          "tileSize": 512,
+          "size": 2048
+        },
+        {
+          "tileSize": 512,
+          "size": 4096
+        }
+      ],
+      "faceSize": 2976,
+      "initialViewParameters": {
+        "yaw": -3.0058135346357187,
+        "pitch": -0.025287074160019074,
+        "fov": 1.3365071038314758
+      },
+      "linkHotspots": [
+        {
+          "yaw": -2.2666312977455156,
+          "pitch": 0.04568278685716898,
+          "rotation": 0,
+          "target": "4-cuisine"
+        },
+        {
+          "yaw": 3.0446965612052743,
+          "pitch": 0.09970409150373172,
+          "rotation": 0,
+          "target": "14-pergola"
+        },
+        {
+          "yaw": 2.51119614431561,
+          "pitch": 0.08049553579363966,
+          "rotation": 0,
+          "target": "17-figuier"
+        }
+      ],
+      "infoHotspots": []
+    },
+    {
+      "id": "1-alle",
       "name": "allée",
       "levels": [
         {
@@ -28,20 +82,20 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": 1.5378452194884131,
+        "pitch": 0.10286884623937453,
+        "fov": 1.3365071038314758
       },
       "linkHotspots": [
         {
-          "yaw": 1.5303088541472665,
-          "pitch": 0.03904251027013217,
+          "yaw": 1.5443217989885696,
+          "pitch": 0.08691731670283787,
           "rotation": 0,
-          "target": "1-entree"
+          "target": "2-entree"
         },
         {
-          "yaw": 2.67193967635619,
-          "pitch": 0.09517079597231337,
+          "yaw": 2.421033766458267,
+          "pitch": -0.04175841956702797,
           "rotation": 0,
           "target": "16-abris_jardin"
         }
@@ -49,7 +103,7 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "1-entree",
+      "id": "2-entree",
       "name": "entree",
       "levels": [
         {
@@ -85,13 +139,13 @@ var APP_DATA = {
           "yaw": -0.10786798521902519,
           "pitch": 0.25785949785513473,
           "rotation": 0,
-          "target": "2-salon_centre"
+          "target": "3-salon_centre"
         },
         {
           "yaw": -2.294007441323732,
           "pitch": 0.25936688987452783,
           "rotation": 0,
-          "target": "0-alle"
+          "target": "1-alle"
         },
         {
           "yaw": -1.6575142537785652,
@@ -103,7 +157,7 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "2-salon_centre",
+      "id": "3-salon_centre",
       "name": "salon_centre",
       "levels": [
         {
@@ -130,8 +184,8 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "yaw": -1.5630864425615787,
-        "pitch": -0.07977645851135406,
+        "yaw": -1.5254947355955455,
+        "pitch": -0.07037767437751796,
         "fov": 1.3365071038314758
       },
       "linkHotspots": [
@@ -139,19 +193,19 @@ var APP_DATA = {
           "yaw": -1.4822620811640181,
           "pitch": 0.13211869619273564,
           "rotation": 0,
-          "target": "4-salon_chambre_ouverte"
+          "target": "5-salon_chambre_ouverte"
         },
         {
-          "yaw": 0.3292905822938117,
-          "pitch": 0.13679100333169814,
+          "yaw": 0.2304333722349572,
+          "pitch": 0.19346237491436824,
           "rotation": 0,
-          "target": "1-entree"
+          "target": "2-entree"
         },
         {
           "yaw": 1.5116432428364508,
           "pitch": 0.22523249009325674,
           "rotation": 0,
-          "target": "3-cuisine"
+          "target": "4-cuisine"
         },
         {
           "yaw": -2.1138006501504822,
@@ -163,7 +217,7 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "3-cuisine",
+      "id": "4-cuisine",
       "name": "cuisine",
       "levels": [
         {
@@ -190,28 +244,34 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": -2.084322586191922,
+        "pitch": 0.20015046404943249,
+        "fov": 1.3365071038314758
       },
       "linkHotspots": [
         {
           "yaw": -1.580140133995787,
           "pitch": 0.14095510236366593,
           "rotation": 0,
-          "target": "2-salon_centre"
+          "target": "3-salon_centre"
         },
         {
-          "yaw": 3.085438297801865,
-          "pitch": 0.21543520838809727,
+          "yaw": -2.990418654616251,
+          "pitch": 0.292977821049341,
           "rotation": 0,
-          "target": "12-terrase_bois"
+          "target": "13-terrase_bois"
+        },
+        {
+          "yaw": -0.7931230291251516,
+          "pitch": 0.11923540457681092,
+          "rotation": 0,
+          "target": "2-entree"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "4-salon_chambre_ouverte",
+      "id": "5-salon_chambre_ouverte",
       "name": "salon_chambre_ouverte",
       "levels": [
         {
@@ -247,25 +307,25 @@ var APP_DATA = {
           "yaw": 1.5421217315837303,
           "pitch": 0.057023495978430816,
           "rotation": 0,
-          "target": "3-cuisine"
+          "target": "4-cuisine"
         },
         {
           "yaw": -0.23747615646418296,
           "pitch": 0.04313808239882455,
           "rotation": 0,
-          "target": "5-chambre_bas"
+          "target": "6-chambre_bas"
         },
         {
           "yaw": 1.0171265780803829,
           "pitch": -0.3786295538803284,
           "rotation": 0,
-          "target": "7-palier_ouvert"
+          "target": "8-palier_ouvert"
         },
         {
           "yaw": 1.0408642262948646,
           "pitch": 0.11056508346234928,
           "rotation": 0,
-          "target": "1-entree"
+          "target": "2-entree"
         },
         {
           "yaw": -2.7995242324010015,
@@ -277,7 +337,7 @@ var APP_DATA = {
       "infoHotspots": []
     },
     {
-      "id": "5-chambre_bas",
+      "id": "6-chambre_bas",
       "name": "chambre_bas",
       "levels": [
         {
@@ -313,19 +373,19 @@ var APP_DATA = {
           "yaw": 0.4546991418010844,
           "pitch": 0.13446394930373984,
           "rotation": 0,
-          "target": "6-sdb_bas"
+          "target": "7-sdb_bas"
         },
         {
           "yaw": 3.0181555090246786,
           "pitch": 0.36118939875887257,
           "rotation": 0,
-          "target": "4-salon_chambre_ouverte"
+          "target": "5-salon_chambre_ouverte"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "6-sdb_bas",
+      "id": "7-sdb_bas",
       "name": "sdb_bas",
       "levels": [
         {
@@ -352,22 +412,22 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": 1.410567841987426,
+        "pitch": 0.17601359377910697,
+        "fov": 1.3365071038314758
       },
       "linkHotspots": [
         {
           "yaw": 2.7567324638346697,
           "pitch": 0.2441720409676975,
           "rotation": 0,
-          "target": "5-chambre_bas"
+          "target": "6-chambre_bas"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "7-palier_ouvert",
+      "id": "8-palier_ouvert",
       "name": "palier_ouvert",
       "levels": [
         {
@@ -394,46 +454,46 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": 1.296429932784731,
+        "pitch": 0.30828011958982415,
+        "fov": 1.3365071038314758
       },
       "linkHotspots": [
         {
           "yaw": 0.27546455674057846,
           "pitch": 0.17249410774946483,
           "rotation": 0,
-          "target": "8-mezzanine"
+          "target": "9-mezzanine"
         },
         {
-          "yaw": -1.4194373800117877,
-          "pitch": 0.2617632899721585,
+          "yaw": -1.4175146555832718,
+          "pitch": 0.2638366989760925,
           "rotation": 0,
-          "target": "9-chanmbre_haut_1"
+          "target": "10-chanmbre_haut_1"
         },
         {
-          "yaw": -2.4296591854859884,
-          "pitch": 0.1349786108540929,
+          "yaw": -2.427909968859165,
+          "pitch": 0.13485897850241102,
           "rotation": 0,
-          "target": "11-sdb_haut"
+          "target": "12-sdb_haut"
         },
         {
           "yaw": -3.064689102477539,
           "pitch": 0.15008313411158092,
           "rotation": 0,
-          "target": "10-chanmbre_haut_2"
+          "target": "11-chanmbre_haut_2"
         },
         {
           "yaw": 2.8157379214920066,
           "pitch": 0.7108092009937721,
           "rotation": 0,
-          "target": "4-salon_chambre_ouverte"
+          "target": "5-salon_chambre_ouverte"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "8-mezzanine",
+      "id": "9-mezzanine",
       "name": "mezzanine",
       "levels": [
         {
@@ -460,22 +520,22 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": 1.4635847116533949,
+        "pitch": 0.4077897981556511,
+        "fov": 1.3365071038314758
       },
       "linkHotspots": [
         {
           "yaw": 2.3487063668316477,
           "pitch": 0.14708514245508297,
           "rotation": 0,
-          "target": "7-palier_ouvert"
+          "target": "8-palier_ouvert"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "9-chanmbre_haut_1",
+      "id": "10-chanmbre_haut_1",
       "name": "chanmbre_haut_1",
       "levels": [
         {
@@ -502,22 +562,22 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": -0.7269772047471204,
+        "pitch": 0.4375411582333193,
+        "fov": 1.3365071038314758
       },
       "linkHotspots": [
         {
           "yaw": -3.0433552407490865,
           "pitch": 0.25255528999219123,
           "rotation": 0,
-          "target": "7-palier_ouvert"
+          "target": "8-palier_ouvert"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "10-chanmbre_haut_2",
+      "id": "11-chanmbre_haut_2",
       "name": "chanmbre_haut_2",
       "levels": [
         {
@@ -544,22 +604,22 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": -1.1539457738387036,
+        "pitch": 0.2585155723999595,
+        "fov": 1.3365071038314758
       },
       "linkHotspots": [
         {
           "yaw": 2.55295828922689,
           "pitch": 0.228520137220098,
           "rotation": 0,
-          "target": "7-palier_ouvert"
+          "target": "8-palier_ouvert"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "11-sdb_haut",
+      "id": "12-sdb_haut",
       "name": "sdb_haut",
       "levels": [
         {
@@ -595,13 +655,13 @@ var APP_DATA = {
           "yaw": -2.4647310335655437,
           "pitch": 0.1574582783561791,
           "rotation": 0,
-          "target": "7-palier_ouvert"
+          "target": "8-palier_ouvert"
         }
       ],
       "infoHotspots": []
     },
     {
-      "id": "12-terrase_bois",
+      "id": "13-terrase_bois",
       "name": "terrase_bois",
       "levels": [
         {
@@ -628,16 +688,16 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": 0.6430859830975315,
+        "pitch": 0.07707002989745604,
+        "fov": 1.3365071038314758
       },
       "linkHotspots": [
         {
           "yaw": 0.4755928413590951,
           "pitch": 0.07563731668575002,
           "rotation": 0,
-          "target": "13-jardin_centre"
+          "target": "0-jardin_centre"
         },
         {
           "yaw": 1.5285490126662182,
@@ -649,61 +709,7 @@ var APP_DATA = {
           "yaw": -3.07500813517011,
           "pitch": 0.093368742186831,
           "rotation": 0,
-          "target": "3-cuisine"
-        }
-      ],
-      "infoHotspots": []
-    },
-    {
-      "id": "13-jardin_centre",
-      "name": "jardin_centre",
-      "levels": [
-        {
-          "tileSize": 256,
-          "size": 256,
-          "fallbackOnly": true
-        },
-        {
-          "tileSize": 512,
-          "size": 512
-        },
-        {
-          "tileSize": 512,
-          "size": 1024
-        },
-        {
-          "tileSize": 512,
-          "size": 2048
-        },
-        {
-          "tileSize": 512,
-          "size": 4096
-        }
-      ],
-      "faceSize": 2976,
-      "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
-      },
-      "linkHotspots": [
-        {
-          "yaw": -2.2666312977455156,
-          "pitch": 0.04568278685716898,
-          "rotation": 0,
-          "target": "3-cuisine"
-        },
-        {
-          "yaw": 2.980640971070157,
-          "pitch": 0.0791376019189336,
-          "rotation": 0,
-          "target": "14-pergola"
-        },
-        {
-          "yaw": 2.51119614431561,
-          "pitch": 0.08049553579363966,
-          "rotation": 0,
-          "target": "17-figuier"
+          "target": "4-cuisine"
         }
       ],
       "infoHotspots": []
@@ -736,16 +742,16 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": -2.369247110816236,
+        "pitch": 0.10859474342642628,
+        "fov": 1.3365071038314758
       },
       "linkHotspots": [
         {
           "yaw": -1.9493272643639372,
           "pitch": 0.09106208617503242,
           "rotation": 0,
-          "target": "13-jardin_centre"
+          "target": "0-jardin_centre"
         },
         {
           "yaw": -0.9572863146050388,
@@ -757,7 +763,7 @@ var APP_DATA = {
           "yaw": 1.99261553164078,
           "pitch": 0.11491936864903707,
           "rotation": 0,
-          "target": "4-salon_chambre_ouverte"
+          "target": "5-salon_chambre_ouverte"
         },
         {
           "yaw": 0.7723872920779122,
@@ -769,7 +775,7 @@ var APP_DATA = {
           "yaw": 2.8618579167376055,
           "pitch": 0.07100113719228673,
           "rotation": 0,
-          "target": "12-terrase_bois"
+          "target": "13-terrase_bois"
         }
       ],
       "infoHotspots": []
@@ -817,7 +823,7 @@ var APP_DATA = {
           "yaw": -1.4938721482927004,
           "pitch": 0.051697363000245744,
           "rotation": 0,
-          "target": "13-jardin_centre"
+          "target": "0-jardin_centre"
         }
       ],
       "infoHotspots": []
@@ -850,9 +856,9 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": -2.87644614561626,
+        "pitch": 0.13766787872665986,
+        "fov": 1.3365071038314758
       },
       "linkHotspots": [
         {
@@ -898,9 +904,9 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": -0.9697042544841317,
+        "pitch": -0.15316829709829882,
+        "fov": 1.3365071038314758
       },
       "linkHotspots": [
         {
@@ -961,13 +967,13 @@ var APP_DATA = {
           "yaw": 2.3094187379743314,
           "pitch": 0.08734654857107671,
           "rotation": 0,
-          "target": "1-entree"
+          "target": "2-entree"
         },
         {
           "yaw": 0.03560912889065193,
           "pitch": 0.3301265576782164,
           "rotation": 0,
-          "target": "0-alle"
+          "target": "1-alle"
         },
         {
           "yaw": -2.3025521345046425,
@@ -1006,16 +1012,16 @@ var APP_DATA = {
       ],
       "faceSize": 2976,
       "initialViewParameters": {
-        "pitch": 0,
-        "yaw": 0,
-        "fov": 1.5707963267948966
+        "yaw": 1.3046151661339174,
+        "pitch": 0.2561200594768298,
+        "fov": 1.3365071038314758
       },
       "linkHotspots": [
         {
           "yaw": 1.6295456230323895,
           "pitch": 0.1658520528899885,
           "rotation": 0,
-          "target": "1-entree"
+          "target": "2-entree"
         },
         {
           "yaw": 2.4099705971853673,
